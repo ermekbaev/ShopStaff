@@ -1,3 +1,52 @@
 {
-  "products": []
+  "products": [
+    {
+      "name": "Инесса",
+      "descr": "Журнальный стол",
+      "price": 250,
+      "picture": "https://lina.kg/image/cache/catalog/Tables/inessatab/DSC04211_s-267x200.jpg",
+      "type": "Стол",
+      "id": 1
+    },
+    {
+      "name": "Флория",
+      "descr": "Журнальный стол",
+      "price": 300,
+      "picture": "https://lina.kg/image/cache/catalog/Tables/floria_1-267x200.jpg",
+      "type": "Стол",
+      "id": 2
+    },
+    {
+      "name": "Флиппо",
+      "descr": "Журнальный стол",
+      "price": 3000,
+      "picture": "https://lina.kg/image/cache/catalog/Tables/filippo/DSC05521_s-267x200.jpg",
+      "type": "Стол",
+      "id": 3
+    },
+    {
+      "name": "Людовик",
+      "descr": "стул",
+      "price": 200,
+      "picture": "https://lina.kg/image/cache/catalog/Tables/ludovik/Liudovik%203%20bez%20lokotneykov-267x200.jpg",
+      "type": "Стул",
+      "id": 4
+    },
+    {
+      "name": "Ференци",
+      "descr": "стул",
+      "price": 200,
+      "picture": "https://lina.kg/image/cache/catalog/Tables/Ferentci%205%20kopiia-267x200.jpg",
+      "type": "Стул",
+      "id": 5
+    },
+    {
+      "name": "Президент",
+      "descr": "стул",
+      "price": 200,
+      "picture": "https://lina.kg/image/cache/catalog/Tables/rossi/DSC04221_s-267x200.jpg",
+      "type": "Стул",
+      "id": 6
+    }
+  ]
 }

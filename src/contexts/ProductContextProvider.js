@@ -1,7 +1,7 @@
-import axios from 'axios';
-import React, { createContext, useContext, useEffect, useReducer } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
-import { ACTIONS, JSON_API_PRODUCTS } from '../helpers/consts';
+import axios from "axios";
+import React, { createContext, useContext, useEffect, useReducer } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { ACTIONS, JSON_API_PRODUCTS } from "../helpers/consts";
 
 export const productContext = createContext();
 
@@ -33,7 +33,7 @@ const ProductContextProvider = ({ children }) => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // getProducts
+  //! getProducts
 
   const getProducts = async () => {
     const { data } = await axios.get(
@@ -46,7 +46,7 @@ const ProductContextProvider = ({ children }) => {
     });
   };
 
-  // addProduct
+  //! addProduct
   const addProduct = async (newProduct) => {
     await axios.post(JSON_API_PRODUCTS, newProduct);
   };
@@ -56,17 +56,17 @@ const ProductContextProvider = ({ children }) => {
     getProducts();
   };
 
-  // get one product details
+  //! get one product details
   const getProductDetails = async (id) => {
     const { data } = await axios.get(`${JSON_API_PRODUCTS}/${id}`);
     dispatch({ type: ACTIONS.GET_PRODUCT_DETAILS, payload: data });
   };
 
-  // save edited product
+  //! save edited product
 
   const saveEditedProduct = async (newProduct) => {
     await axios.patch(`${JSON_API_PRODUCTS}/${newProduct.id}`, newProduct);
-    // getProducts();
+    getProducts();
   };
 
   //==========
@@ -74,7 +74,7 @@ const ProductContextProvider = ({ children }) => {
   const fetchByParams = async (query, value) => {
     const search = new URLSearchParams(location.search);
 
-    if (value === 'all') {
+    if (value === "all") {
       search.delete(query);
     } else {
       search.set(query, value);

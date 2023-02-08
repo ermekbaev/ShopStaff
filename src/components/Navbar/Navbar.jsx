@@ -22,10 +22,10 @@ import { Fullscreen } from "@mui/icons-material";
 
 const pages = [
   { name: "Home", link: "/", id: 1 },
-  { name: "Our Partners", link: "/partners", id: 2 },
-  { name: "Products", link: "/products", id: 3 },
-  { name: "AboutUs", link: "/about", id: 4 },
-  { name: "Admin", link: "/admin", id: 5 },
+
+  { name: "Products", link: "/products", id: 2 },
+  { name: "AboutUs", link: "/about", id: 3 },
+  { name: "Admin", link: "/admin", id: 4 },
 ];
 
 function Navbar() {
@@ -69,7 +69,6 @@ function Navbar() {
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
@@ -85,7 +84,7 @@ function Navbar() {
               textDecoration: "none",
             }}
           >
-            LOGO
+            Shop Staff
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -143,7 +142,7 @@ function Navbar() {
               textDecoration: "none",
             }}
           >
-            LOGO
+            Shop Staff
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
@@ -202,6 +201,7 @@ function Navbar() {
           </Box>
         </Toolbar>
       </Container>
+      <img src="./bg.jpg" alt="bg" />
     </AppBar>
   );
 }

@@ -1,9 +1,9 @@
-import { Grid, Pagination } from '@mui/material';
-import { Box } from '@mui/system';
-import React, { useEffect, useState } from 'react';
-import { useSearchParams } from 'react-router-dom';
-import { useProducts } from '../../contexts/ProductContextProvider';
-import ProductCard from './ProductCard';
+import { Grid, Pagination } from "@mui/material";
+import { Box } from "@mui/system";
+import React, { useEffect, useState } from "react";
+import { useSearchParams } from "react-router-dom";
+import { useProducts } from "../../contexts/ProductContextProvider";
+import ProductCard from "./ProductCard";
 
 const ProductList = () => {
   const { getProducts, products } = useProducts();
@@ -40,10 +40,10 @@ const ProductList = () => {
       <Grid item md={9}>
         <Box
           sx={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'center',
-            mb: '4rem',
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            mb: "4rem",
           }}
         >
           {currentData().map((item) => (

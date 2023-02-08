@@ -98,7 +98,7 @@ const EditProduct = () => {
         fullWidth
         size="large"
       >
-        SAVE CHANGES
+        SAVE EDITED
       </Button>
     </Box>
   );

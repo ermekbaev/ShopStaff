@@ -46,8 +46,6 @@ export default function ProductCard({ item }) {
             color={checkProductInCart(item.id) ? "primary" : ""}
           />
         </IconButton>
-
-        <Button size="small">Details</Button>
       </CardActions>
     </Card>
   );
